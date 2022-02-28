@@ -6,13 +6,13 @@ HARD_LEVEL = 5
 turns = 0
 def check_answer(guess,answer,turns):
   if guess > answer:
-    print("もっと下！")
+    print("もっと下👆")
     return turns - 1
   elif guess < answer:
-    print("もっと上！")
+    print("もっと上👆")
     return turns - 1
   else:  
-    print(f"ビンゴ！{guess}")
+    print(f"ビンゴ🥳{guess}🥳")
           
 def set_difficulty():
   level =input("難易度：'easy'　or　'hard'を入力してね。:") 
@@ -37,7 +37,7 @@ def game():
     guess = int(input("どの数字？:"))
     turns = check_answer(guess, answer,turns)
     if turns == 0:
-      print(f"ざんねん！答えは、{answer}でした。ゲームオーバー")
+      print(f"ざんねん！答えは、{answer}でした。😈ゲームオーバー😈")
       return
     elif guess != answer:
       print("もう一回挑戦しよう！")
