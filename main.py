@@ -37,7 +37,7 @@ def game():
     guess = int(input("どの数字？:"))
     turns = check_answer(guess, answer,turns)
     if turns == 0:
-      print(f"ざんねん！答えは、{answer}ゲームオーバー")
+      print(f"ざんねん！答えは、{answer}でした。ゲームオーバー")
       return
     elif guess != answer:
       print("もう一回挑戦しよう！")
